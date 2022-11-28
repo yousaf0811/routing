@@ -14,14 +14,15 @@ import Post_api from './pages/post_api';
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
+      <Routes>
         <Route path='/home' element={<Home/>} />
         <Route path='/about/:un' element={<About/>} />
         <Route path='/users/:username' element={<Userlist/>} />
         <Route path='/post' element={<Post/>} />
-        </Routes> */}
-        
-        <Post_api />
+        </Routes>
+        <h1>Please type "http//localhost:3000/home</h1><br></br>
+        <h2>Go to Routing Example</h2>
+        {/* <Post_api /> */}
     </div>
   );
 }

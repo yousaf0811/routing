@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 const Userlist = () => {
     const uname = useParams();
     const [usersdata, setUsersdata] = useState([]);

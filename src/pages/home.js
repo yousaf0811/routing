@@ -1,23 +1,17 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-
 const Home = ()=>{
   const [data,setData] = useState([]);
   const [gitusers,setGitusers] = useState ([]);
-
-
   const gitfunc = ()=>{
     fetch('https://api.github.com/users')
     .then(responce => responce.json())
     .then(json => setGitusers(json))
   }
-
   const fdata = ()=>{
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(json => setData(json))
-    // setData(json)
-
   }
   useEffect(()=>{
     fdata();
